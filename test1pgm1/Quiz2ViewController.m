@@ -36,10 +36,16 @@
 }
 
 - (IBAction)swap:(id)sender {
-    static int color;
+    static int color = 0;
     
-    if (self.color == 0){
+    if (color == 0){
     self.myLabel.textColor = [UIColor redColor];
+        color = 1;
+    }
+    
+    else if(color == 1){
+        self.myLabel.textColor = [UIColor greenColor];
+        color = 0;
     }
     
     
