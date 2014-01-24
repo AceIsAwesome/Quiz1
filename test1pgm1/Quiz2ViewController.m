@@ -45,9 +45,43 @@
     
     else if(color == 1){
         self.myLabel.textColor = [UIColor greenColor];
-        color = 0;
+        color = 2;
     }
     
+    else if(color == 2){
+        self.myLabel.textColor = [UIColor yellowColor];
+        color = 3;
+    }
+    
+    else if(color == 3){
+        self.myLabel.textColor = [UIColor orangeColor];
+        color = 4;
+    }
+    
+    else if(color == 4){
+        self.myLabel.textColor = [UIColor blueColor];
+        color = 5;
+    }
+    
+    else if(color == 5){
+        self.myLabel.textColor = [UIColor purpleColor];
+        color = 6;
+    }
+    
+    else if(color == 6){
+        self.myLabel.textColor = [UIColor blackColor];
+        color = 7;
+    }
+    
+    else if(color == 7){
+        self.myLabel.textColor = [UIColor grayColor];
+        color = 8;
+    }
+    
+    else if(color == 8){
+        self.myLabel.textColor = [UIColor brownColor];
+        color = 0;
+    }
     
 }
 @end
