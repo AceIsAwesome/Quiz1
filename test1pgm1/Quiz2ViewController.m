@@ -13,6 +13,8 @@
 @end
 
 @implementation Quiz2ViewController
+@synthesize myLabel;
+
 
 - (void)viewDidLoad
 {
@@ -22,6 +24,8 @@
 
 - (void)viewDidUnload
 {
+    [self setMyLabel:nil];
+    [self setMyLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +35,13 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)swap:(id)sender {
+    static int color;
+    
+    if (self.color == 0){
+    self.myLabel.textColor = [UIColor redColor];
+    }
+    
+    
+}
 @end
